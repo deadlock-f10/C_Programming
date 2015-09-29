@@ -1,0 +1,50 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Array	convert.c	/^	ElementType *Array;$/;"	m	struct:StackRecond	file:
+Capacity	convert.c	/^	int Capacity;$/;"	m	struct:StackRecond	file:
+CreateStack	convert.c	/^CreateStack(int MaxElements)$/;"	f
+ElementType	convert.c	/^typedef Token ElementType;$/;"	t	file:
+EmptyTOS	convert.c	5;"	d	file:
+Expression	convert.c	/^	Term = 0,Expression = 1$/;"	e	enum:__anon1	file:
+IsEmpty	convert.c	/^int IsEmpty(Stack S)$/;"	f
+IsFull	convert.c	/^int IsFull(Stack S)$/;"	f
+M	data.c	/^int M=0;$/;"	v
+M	data_spoiled.c	/^int M=0;$/;"	v
+Max_Points	points.c	4;"	d	file:
+Max_number	data.c	3;"	d	file:
+Max_number	data_spoiled.c	3;"	d	file:
+Operator	convert.c	/^typedef char Operator;$/;"	t	file:
+Point	points.c	/^typedef struct point* Point;$/;"	t	typeref:struct:point	file:
+Pop	convert.c	/^void Pop(Stack S)$/;"	f
+Push	convert.c	/^Push(ElementType X, Stack S)$/;"	f
+Stack	convert.c	/^typedef struct StackRecond *Stack;$/;"	t	typeref:struct:StackRecond	file:
+StackRecond	convert.c	/^struct StackRecond{$/;"	s	file:
+Term	convert.c	/^	Term = 0,Expression = 1$/;"	e	enum:__anon1	file:
+Token	convert.c	/^}* Token;$/;"	t	typeref:struct:token	file:
+Top	convert.c	/^Top(Stack S)$/;"	f
+TopOfStack	convert.c	/^	int TopOfStack;$/;"	m	struct:StackRecond	file:
+Type	convert.c	/^	int Type;$/;"	m	struct:token	file:
+compact	data.c	/^int *compact;$/;"	v
+compact	data_spoiled.c	/^int *compact;$/;"	v
+compar	data.c	/^int compar(const void *a , const void *b)$/;"	f
+compar	data_spoiled.c	/^int compar(const void *a , const void *b)$/;"	f
+main	convert.c	/^int main()$/;"	f
+main	data.c	/^int main()$/;"	f
+main	data_spoiled.c	/^int main()$/;"	f
+main	points.c	/^int main()$/;"	f
+main	sigma.c	/^int main()$/;"	f
+numberOfOperator	convert.c	3;"	d	file:
+point	points.c	/^struct point{$/;"	s	file:
+polygon	points.c	/^float polygon(int N,Point *P){$/;"	f
+rank	data.c	/^int rank(int n)$/;"	f
+rank	data_spoiled.c	/^int rank(int n)$/;"	f
+str	convert.c	/^	char *str;$/;"	m	struct:token	file:
+token	convert.c	/^typedef struct token{$/;"	s	file:
+token_lenth	convert.c	4;"	d	file:
+triangle	points.c	/^float triangle(Point A, Point B , Point C)$/;"	f
+x	points.c	/^	float x;$/;"	m	struct:point	file:
+y	points.c	/^	float y;$/;"	m	struct:point	file:
