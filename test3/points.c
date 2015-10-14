@@ -12,15 +12,12 @@ float polygon(int N,Point *P);
 int main()
 {
 	Point *P;
-	int N;
-	scanf("%d",&N);
-	P = malloc(sizeof(Point) * N);
-	int i;
-	for(i = 0 ; i < N ; i++){
-		P[i] = malloc(sizeof(struct point));
-		scanf("%f %f",&(P[i]->x),&(P[i]->y));
-	}
-	printf("%.2f\n",polygon(N,P));
+	P = malloc(sizeof(Point) * 20);
+	int i=-1;
+	do{
+		P[++i] = malloc(sizeof(struct point));
+	}while(scanf("%f %f",&(P[i]->x),&(P[i]->y)) != EOF);
+	printf("%.2f\n",polygon(i,P));
 	return 0;
 }
 float triangle(Point A, Point B , Point C)
