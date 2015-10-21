@@ -19,13 +19,18 @@ int main()
 {
 	FILE *in,*out;
 	in = fopen("arr.in","r");
-	out = fopen("arr.out","w");
+	//out = fopen("arr.out","w");
 	int A[max+1][max+1],B[max+1][max+1];
 	char c;
 	int i;
 	do{
-		fscanf(in,"%d%c",&A[1][++k],&c);
-	}while(c == ' ');
+		fscanf(in,"%d",&A[1][++k]);
+		while((c = fgetc(in)) == ' ')
+			;
+		if(c == '\n')
+			break;
+		ungetc(c,in);
+	}while(1);
 	do{
 		c = fgetc(in);
 		if(c == '\n')
@@ -38,8 +43,13 @@ int main()
 		}while(i < k);
 	}while(true);
 	do{
-		fscanf(in,"%d%c",&B[++n][1],&c);
-	}while(c == ' ');
+		fscanf(in,"%d",&B[++n][1]);
+		while((c = fgetc(in)) == ' ')
+			;
+		if(c == '\n')
+			break;
+		ungetc(c,in);
+	}while(1);
 	int j=1;
 	while(j < k){
 		j++;
@@ -50,8 +60,8 @@ int main()
 	}
 	for(i=1; i <= m ; i++){
 		for(j=1 ; j <= n ; j++)
-			fprintf(out,"%1d ",multiply(A[i],B[j]));
-		fprintf(out,"\n");
+			fprintf(stdout,"%12d",multiply(A[i],B[j]));
+		fprintf(stdout,"\n");
 	}
 	return 0;
 }
